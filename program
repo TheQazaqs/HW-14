@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> cities = new List<string>
+        {
+            "Алматы",
+            "Нұр-Сұлтан",
+            "Шымкент",
+            "Ақтау",
+            "Қарағанды"
+        };
+
+        Console.WriteLine("Қалалар тізімі:");
+        foreach (var city in cities)
+        {
+            Console.WriteLine(city);
+        }
+    }
+}
