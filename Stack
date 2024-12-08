@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Stack<string> returnedBooks = new Stack<string>();
+        returnedBooks.Push("Кітап 1");
+        returnedBooks.Push("Кітап 2");
+        returnedBooks.Push("Кітап 3");
+        returnedBooks.Push("Кітап 4");
+
+        Console.WriteLine("Соңғы қайтарылған кітап жойылды: " + returnedBooks.Pop());
+
+        Console.WriteLine("Қалған кітаптар:");
+        foreach (var book in returnedBooks)
+        {
+            Console.WriteLine(book);
+        }
+    }
+}
