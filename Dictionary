@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Dictionary<string, int> prices = new Dictionary<string, int>
+        {
+            { "Нан", 120 },
+            { "Сүт", 200 },
+            { "Айран", 150 },
+            { "Сыр", 500 },
+            { "Кәмпит", 300 }
+        };
+
+        Console.Write("Бағасын білгіңіз келген тауарды енгізіңіз: ");
+        string item = Console.ReadLine();
+
+        if (prices.TryGetValue(item, out int price))
+        {
+            Console.WriteLine($"{item} бағасы: {price} теңге.");
+        }
+        else
+        {
+            Console.WriteLine("Мұндай тауар жоқ.");
+        }
+    }
+}
