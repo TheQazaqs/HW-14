@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 45, 23, 78, 12, 90 };
+
+        int max = numbers[0];
+        foreach (var number in numbers)
+        {
+            if (number > max)
+            {
+                max = number;
+            }
+        }
+
+        Console.WriteLine($"Ең үлкен сан: {max}");
+    }
+}
