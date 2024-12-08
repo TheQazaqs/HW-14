@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Queue<string> clients = new Queue<string>();
+        clients.Enqueue("Клиент 1");
+        clients.Enqueue("Клиент 2");
+        clients.Enqueue("Клиент 3");
+        clients.Enqueue("Клиент 4");
+        clients.Enqueue("Клиент 5");
+
+        Console.WriteLine("Кезектен шыққан клиенттер: ");
+        Console.WriteLine(clients.Dequeue());
+        Console.WriteLine(clients.Dequeue());
+
+        Console.WriteLine("Қалған клиенттер:");
+        foreach (var client in clients)
+        {
+            Console.WriteLine(client);
+        }
+    }
+}
